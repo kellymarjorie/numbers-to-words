@@ -1,0 +1,67 @@
+﻿@model CucumberTechnicalTest.Models.CurrencyConverterModel
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="shortcut icon" href="~/images/unicorn-face.png" />
+	<title>Kelly Williams</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="~/css/site.css" rel="stylesheet" /> <!-- local css -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Share+Tech+Mono" rel="stylesheet">
+
+
+</head>
+<body>
+	<nav class='nav justify-content-end' id='top main'>
+		<a class='nav-link' href='https://kellymarjorie.github.io'>portfolio</a>
+		<a class='nav-link' href='mailto:kellymarjoriewilliams@gmail.com?subject=Hi there, want to work together?'>contact</a>
+	</nav>
+
+	<div class='row justify-content-center'>
+		<div class='col-7'>
+			<p class='lead bold'><span class='em'>Cucumber</span> technical test.</p>
+		</div>
+	</div>
+
+<div class='container'>
+	<div class='col-7-bio'>
+		<form method="POST" action="/Home/Result" id="myForm">
+			<div class='form-group row justify-content-center'>
+				<label for='' class="col-md-2 col-form-label"><p class='lead-bold'>Name:</p></label>
+				<div class="col-md-9">
+					<input name="YourNameHere" type="text" required="required" class="form-control form-control-lg" placeholder="Name">
+				</div>
+
+			</div>
+			<div class='form-group row justify-content-center'>
+				<label for='' class="col-md-2 col-form-label"><p class='lead-bio'>Amount:</p></label>
+				<div class="col-md-9">
+					<input name="NumberToConvert" type="number" step="0.01" min="0" required="required" class="form-control form-control-lg" placeholder="Number">
+				</div>
+			</div>
+			<div class='d-flex justify-content-center buttons-group'>
+				<div class='p-2'>
+					<button type='submit' class="btn btn-submit btn-lg">Submit</button>
+				</div>
+				<div class='p-2'>
+					<button type='reset' class="btn btn-cancel btn-lg" onclick="clear()">Clear</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<script>
+	function clear() {
+		document.getElementById("myForm").reset();
+	}
+</script>
+</body>
+</html>
