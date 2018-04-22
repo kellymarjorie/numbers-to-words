@@ -18,7 +18,7 @@ As part of this work, I made some assumptions which in a real life situation I w
 - From the debug menu, select Run Without Debugging
 
 #### Option 2 :
-- Click 'Clone or Download button.
+- Click 'Clone or Download' button.
 - Copy 'https://github.com/kellymarjorie/numbers-to-words.git' to clipboard
 - Open command line
 - Enter 'git clone https://github.com/kellymarjorie/numbers-to-words.git ./numberstowords'
