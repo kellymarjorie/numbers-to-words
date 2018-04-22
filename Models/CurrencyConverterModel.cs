@@ -87,7 +87,7 @@ namespace CucumberTechnicalTest.Models
                 }
 
                 //check for teens
-                teens = listOfThrees.ElementAt(i).Length > 2 ? listOfThrees.ElementAt(i)[a.Length - 2].ToString() + listOfThrees.ElementAt(i)[a.Length - 1].ToString() : null; // adds the last two nums in the str to a new var
+                teens = listOfThrees.ElementAt(i).Length >= 2 ? listOfThrees.ElementAt(i)[a.Length - 2].ToString() + listOfThrees.ElementAt(i)[a.Length - 1].ToString() : null; // adds the last two nums in the str to a new var
                 int steens = Convert.ToInt32(teens); // converts it to a num to compare
 
                 if (steens <= 19 && steens >= 11)
@@ -123,7 +123,7 @@ namespace CucumberTechnicalTest.Models
                         b.Insert(0, units[unitNums - 1]); // pushes the word to temp answer array
                     }
 
-                    var tensNum = listOfThrees.ElementAt(i).Length > 2 ? listOfThrees.ElementAt(i)[a.Length - 2].ToString() : null; // takes the second num in the str to a new var for the tens
+                    var tensNum = listOfThrees.ElementAt(i).Length >= 2 ? listOfThrees.ElementAt(i)[a.Length - 2].ToString() : null; // takes the second num in the str to a new var for the tens
                     int tensNums = Convert.ToInt32(tensNum); // converts it to a num
                     if (tensNums > 0)
                     {
