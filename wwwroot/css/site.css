@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+	padding-top: 70px;
+	font-family: "Roboto", sans-serif;
+}
+
+nav {
+	padding-right: 60px;
+	padding-bottom: 20px;
+}
+
+a.nav-link {
+	font-family: "Share Tech Mono", monospace;
+	color: #0C120C;
+}
+
+	a.nav-link :hover, a.nav-link :active {
+		color: #D7263D !important;
+		text-decoration: none;
+	}
+
+	a.nav-link.active {
+		text-decoration: line-through !important;
+	}
+
+		a.nav-link.active :hover {
+			text-decoration: line-through;
+		}
+
+ul.list-inline {
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+
+	ul.list-inline a {
+		color: #D7263D;
+		text-decoration: none;
+	}
+
+		ul.list-inline a :hover {
+			color: #D7263D;
+			text-decoration: none;
+		}
+
+p.lead.bold {
+	padding-top: 60px;
+	font-family: "Roboto", sans-serif;
+	font-size: 3.5em;
+}
+
+	p.lead.bold .em {
+		font-weight: bold;
+		color: #F0A202;
+	}
+
+	p.lead.bold a {
+		color: #F0A202 !important;
+	}
+
+.navigate a {
+	font-size: 4em;
+	color: #F0A202;
+	padding-bottom: 40px;
+}
+
+	.navigate a :hover {
+		color: #F0A202;
+	}
+
+.strike-through {
+	text-decoration: line-through !important;
+}
+
+.project-tags {
+	font-family: "Share Tech Mono", monospace;
+	text-align: right;
+	padding-bottom: 60px;
+}
+
+	.project-tags a {
+		font-size: 15px;
+		color: #D7263D;
+		cursor: pointer;
+	}
+
+
+div.bio, div.section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 1.25px;
+}
+
+	div.bio .lead-bio, div.section .lead-bio {
+		font-size: 17px;
+	}
+
+form {
+	padding-top: 60px;
+}
+
+.buttons-group {
+	padding-top: 30px;
+}
+
+.btn {
+	color: #0C120C;
+	font-family: "Share Tech Mono", monospace;
+}
+
+.btn-submit {
+	background-color: #F0A202;
+}
+
+.btn-cancel {
+	background-color: grey;
+}
+
+.navigate a {
+	font-size: 5em;
+	color: #F0A202;
+	padding-right: 90px;
+}
+
+	.navigate a :hover {
+		color: #F0A202;
+	}
